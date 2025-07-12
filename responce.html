@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Her Response 💬</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .form-container {
+      max-width: 600px;
+      margin: 100px auto;
+      background: #fff0f5;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+      text-align: center;
+    }
+
+    .form-container h2 {
+      color: #ff1493;
+      margin-bottom: 20px;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 1em;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #ff1493;
+    }
+
+    .success-message {
+      color: green;
+      margin-top: 20px;
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="journey.html">Journey</a></li>
+      <li><a href="reasons.html">Reasons</a></li>
+      <li><a href="praposal.html">Proposal</a></li>
+      <li><a href="memories.html">Memories</a></li>
+      <li><a href="thankyou.html">Thank You</a></li>
+      <li><a href="responce.html">Your Reply 💌</a></li>
+    </ul>
+  </nav>
+
+  <section class="form-container">
+    <h2>Your Message to Rutik 💌</h2>
+    <form action="https://formspree.io/f/movwgobk" method="POST">
+      <input type="text" name="name" placeholder="Namu 💖" required readonly />
+      <select name="emotion" required>
+        <option value="">How do you feel? 💭</option>
+        <option value="happy">I’m the happiest 🥹</option>
+        <option value="shy">I’m blushing 😳</option>
+        <option value="crying">Tears of joy 😭</option>
+        <option value="heart">I love you too 💞</option>
+      </select>
+      <textarea name="message" placeholder="Write something sweet...
+I want to be with you forever, Rutik... 💕" rows="5" required></textarea>
+      <button type="submit">Send to Rutik 💘</button>
+    </form>
+    <p class="success-message">You’ll see a success message here after submitting 💌</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
